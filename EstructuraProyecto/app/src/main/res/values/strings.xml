@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EstructuraProyecto</string>
+    <string name="greeting">Hello Developer</string>
+    <string name="content_text">Mi primera aplicacion</string>
+    <string name="hint_name">Victor Peraza</string>
+    <string name="action_greet">Saludar</string>
+    <string name="helper_name">Ingrese su nombre para ser saludado</string>
+    <string name="template_greeting">Hola %s, bienvenido al mundo del desarrollo movil</string>
+</resources>

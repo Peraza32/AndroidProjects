@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProyectStructure</string>
+    <string name="greeting">Hello Developer</string>
+    <string name="content_text">Mi first application</string>
+    <string name="hint_name">Victor Peraza</string>
+    <string name="action_greet">Greeting</string>
+    <string name="helper_name">Write your name to be greeted</string>
+    <string name="template_greeting">Hello %s, welcome to mobile development</string>
+</resources>

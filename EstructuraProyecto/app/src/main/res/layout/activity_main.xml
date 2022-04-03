@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!-- tool: Context indica cual es el draw que se debe de renderizar para ver una preview de lo que se trabaja-->
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_gap"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/greeting_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greeting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content_text"
+        android:textAllCaps="true" />
+
+    <!--EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/hint_name"
+        android:autofillHints="false"
+        android:layout_marginTop="@dimen/small_gap"
+        /-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_edit_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/greeting">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Use end or begin, not right or left due to compatibility issues with ltr-->
+    <Button
+        android:id="@+id/greeting_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/default_gap"
+        android:text="@string/action_greet" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_gap"
+        android:gravity="center"
+        android:text="@string/helper_name" />
+
+    
+
+</LinearLayout>
